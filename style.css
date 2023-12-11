@@ -61,11 +61,6 @@ nav {
     font-size: 30px;
 }
 
-/* Section styles */
-/* section {
-    padding: 50px 20px;
-} */
-
 /* Section headings */
 section h1, section h2 {
     text-align: center;
@@ -198,7 +193,6 @@ section h1, section h2 {
 }
 
 /* Work */ 
-
 #work h2 {
     font-size: 28px;
     color: #66FCF1;
@@ -287,15 +281,12 @@ section h1, section h2 {
     object-fit: cover;
 }
 
-
-
-
-/* Styles for Contact section */
+/* Contact */
 
 #contact {
     width: auto;
     overflow-x: hidden;
-    background: #45a29e;
+    background: #008b8b;
     padding: 50px;
     display: flex;
     flex-direction: row;
@@ -303,13 +294,17 @@ section h1, section h2 {
 }
 
 #contact .text h2{
+    margin-bottom: 5px;
     color: white;
     width: 100%;
-    text-align: left
+    text-align: left;
+    font-weight: bold;
 }
 
 #contact .text h5{
-    color: #c5c6c7;
+    margin-top: 10px;
+    color: #1f2833;
+    font-size: 16px;
 }
 
 #contact .info{
