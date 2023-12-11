@@ -276,13 +276,14 @@ section h1, section h2 {
     align-items: center;
 }
 
-#contact .text, #contact .text h2{
-    color: white;
-}
-
 #contact .text h2{
+    color: white;
     width: 100%;
     text-align: left
+}
+
+#contact .text h5{
+    color: #c5c6c7;
 }
 
 #contact .info{
