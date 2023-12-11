@@ -1,0 +1,304 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f2833;
+    scroll-behavior: smooth;
+    scroll-padding: 80px;
+}
+
+section {
+    padding: 25px 0;
+}
+
+
+/* Navbar styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0B0C1C;
+    color: white;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.left-navbar a {
+    text-decoration: none;
+    color: #66FCF1;
+    font-size: 40px;
+}
+
+.left-navbar img {
+    max-width: 5%;
+    height: auto;
+    border-radius: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.right-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-navbar a {
+    text-decoration: none;
+    color: #66FCF1;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+/* Section styles */
+/* section {
+    padding: 50px 20px;
+} */
+
+/* Section headings */
+section h1, section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* About section container */
+#about {
+    margin-top: 100px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About image */
+.about-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About text */
+.about-text {
+    flex: 1;
+    padding: 20px;
+    background-color: #2e3844;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text h4 {
+    /* font-size: 28px; */
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.about-text h2 {
+    /* font-size: 28px; */
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d3d3d3;
+}
+
+/* Skills section */
+#skills {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#skills img {
+    width: 75px; 
+    height: auto; 
+    margin: 15px; 
+}
+
+.skill-icons {
+    display: flex;
+    flex: 0 0 60%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #66FCF1;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 10, 0.8);
+    transition: all 0.3s ease; 
+}
+
+.skill-box:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 30px rgba(0, 0, 20, 0.7); 
+}
+
+.skill-box img {
+    width: 30px; 
+    height: auto;
+}
+
+/*https://stackoverflow.com/questions/2011142/how-to-change-the-style-of-the-title-attribute-inside-an-anchor-tag#:~:text=You%20cannot%20style%20the%20default,your%20own%20custom%20HTML%20tooltips*/
+.skill-box img[title]:hover::after { 
+    content: attr(title);
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+/* Additional Styles for Skills Text */
+.skill-text {
+    flex: 0 0 40%;
+    padding-right: 20px;
+}
+
+.skill-text h2 {
+    font-size: 28px;
+    color: #66FCF1;
+    margin-bottom: 15px;
+}
+
+.skill-text p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Work */ 
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;    
+}
+
+.showcase{
+  width: 25vw;  
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0B0C1C;
+  margin: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+  transition: all 0.3s ease;
+}
+
+.showcase:hover{
+    transform: scale(1.1); 
+    box-shadow: 0 0 30px rgba(0, 0, 20, 0.7); 
+}
+
+.showcase img {
+    border-radius: 20px;
+}
+
+.showcase .description {
+    padding: 20px;
+}
+
+.showcase .head{
+    display: flex;
+    flex-direction: row;
+}
+
+.showcase .head .links a img{
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.showcase .head .title{
+    color: #66FCF1;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: bold;
+}
+
+.showcase .description{
+    color: #c5c6c7;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.showcase img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* Styles for Contact section */
+
+#contact {
+    width: auto;
+    overflow-x: hidden;
+    background: #45a29e;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#contact .text{
+    color: white;
+}
+
+#contact .text h2{
+    width: 100%;
+    text-align: left
+}
+
+#contact .info{
+    margin-left: 16vw;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.info-item img {
+    width: 30px; 
+    height: auto;
+}
+
+.qr{
+    margin: 0 auto;
+    height: 100%;
+}
+
+.qr img{
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,70 @@
+/* Reset some default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
+
+.right-navbar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* About Section */
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.text-aboutMe {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%; /* Adjust width as needed */
+}
+
+.text-aboutMe h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-aboutMe p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.img-aboutMe img {
+  width: 50%; /* Adjust width as needed */
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
