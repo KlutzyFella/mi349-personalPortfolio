@@ -54,6 +54,11 @@ nav {
     color: #66FCF1;
     margin-left: 20px;
     font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.right-navbar a:hover {
+    font-size: 30px;
 }
 
 /* Section styles */
@@ -215,6 +220,27 @@ section h1, section h2 {
   border-radius: 20px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 1);
   transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 900px) {
+    .work-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcase{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .work-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .showcase{
+        width: 75vw;
+    }
 }
 
 .showcase:hover{
